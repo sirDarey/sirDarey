@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @sirDarey
-- 👀 I’m a Java Developer and i've built quite some apps
+- 👀 I’m a Java Developer and Software Engineer
 - 💞️ I’m looking to collaborate on projects involving commercial apps and database management systems
 - 📫 You can reach me on Whatsapp (07010854698), instagram(sirdarey), twitter(sirDarey)
 
