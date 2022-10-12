@@ -1,0 +1,68 @@
+
+.Gbutton {
+    -fx-border-color: purple;
+    -fx-border-width: 2px;
+}
+.Gbutton:hover {
+    -fx-border-color: blue;
+}
+
+.qbutton:hover {
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+}
+
+.qbuttonf{
+    -fx-background-color: purple;
+    -fx-text-fill: white;
+}
+
+.tableViewText {
+    -fx-text-fill: red;
+}
+
+.calculatorOthers{
+    -fx-background-color: transparent;
+    -fx-border-color: purple;
+}
+
+.calculatorNumbers {
+    -fx-background-color: silver;
+    -fx-border-color: purple;
+}
+
+.calculatorCancelEqual {
+    -fx-background-color:  #252525;
+    -fx-text-fill: white
+}
+
+.calculatorOthers:hover{
+    -fx-background-color: purple;
+    -fx-text-fill: white;
+}
+
+.calculatorNumbers:hover {
+    -fx-background-color: purple;
+    -fx-text-fill: white;
+}
+
+.calculatorCancelEqual:hover {
+    -fx-background-color: purple;
+}
+
+.general:pressed {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+
+.label:hover {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-text-fill: blue;
+}
+
+.label:hover {
+    -fx-background-color: purple;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+}

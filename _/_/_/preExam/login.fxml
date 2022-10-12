@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" onMouseEntered="#rootEntered" prefHeight="600.0" prefWidth="750.0" spacing="10.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preExam.loginController">
+   <children>
+      <ImageView fx:id="imageLogo" fitHeight="114.0" fitWidth="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/STGEI%20SMALL%20LOGO.png" />
+         </image>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ImageView>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="labelInstructions" text="INSTRUCTIONS">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Login using your STUDENT CODE (in upper case) as your username and your SURNAME (in lower case) as password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="The Assessment consists of 180 QUESTIONS to be attempted within 120 MINS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="TAKE NOTE of the INSTRUCTIONs for each question at the top of the question page">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="External calculators are not allowed; make use of the Exam calculator">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="The system submits automatically if you fail to submit before the time elapses">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Label text="Username">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputUn" onAction="#login" prefHeight="25.0" prefWidth="307.0" style="-fx-background-color: transparent; -fx-border-color: purple; -fx-border-radius: 20;" />
+         </children>
+         <VBox.margin>
+            <Insets top="100.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Label text="Password">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="inputPw" onAction="#login" prefHeight="25.0" prefWidth="307.0" style="-fx-background-color: transparent; -fx-border-color: purple; -fx-border-radius: 20;" />
+         </children>
+      </HBox>
+      <Label fx:id="labelValidateLogin" text="*Enter a valid Name" textFill="RED" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Label onMouseClicked="#changeIp" prefHeight="17.0" stylesheets="@button.css" text="Change Ip Address?" textFill="BLUE">
+                     <padding>
+                        <Insets bottom="2.0" left="3.0" right="3.0" top="2.0" />
+                     </padding></Label>
+                  <Label onMouseClicked="#register" stylesheets="@button.css" text="Register a new Candidate" textFill="BLUE">
+                     <padding>
+                        <Insets bottom="2.0" left="3.0" right="3.0" top="2.0" />
+                     </padding></Label>
+                  <Label onMouseClicked="#checkResults" stylesheets="@button.css" text="ADMIN" textFill="BLUE">
+                     <padding>
+                        <Insets bottom="2.0" left="3.0" right="3.0" top="2.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <TextField fx:id="ipAddress" alignment="CENTER" style="-fx-background-color: transparent; -fx-border-color: purple; -fx-border-width: 0px 0px 2px 0px;" text="localhost" visible="false">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="297.0" style="-fx-border-radius: 5;" styleClass="Gbutton" stylesheets="@button.css" text="Begin Examination">
+         <VBox.margin>
+            <Insets left="50.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
