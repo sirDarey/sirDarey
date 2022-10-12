@@ -1,0 +1,7 @@
+Please find and download "STGEI CBT.zip" to get the compiled .jar file of the Java Application.
+Please, read the "ReadMe" file after extracting the zip file. It gives a  brief overview of the app.
+
+The "Images" folder is not included in the source code. Thus, required images will not be displayed while running  the app on an IDE.
+However, it is compiled with the jar file inside the zip document. Everything works fine when the jar file is run.
+
+Thank You
